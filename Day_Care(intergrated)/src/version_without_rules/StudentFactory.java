@@ -7,7 +7,19 @@ public class StudentFactory extends AbstractPersonFactory {
 
         Student student = new Student();
         student.setName(parts[1]);
-        student.setAge(Integer.parseInt(parts[2]));
+        try {
+			student.setAge(Integer.parseInt(parts[2]));
+		} catch (NumberFormatException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+        try {
+			student.setGpa(Double.parseDouble(parts[3]));
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
         student.setParentName(parts[3]);
         student.setAddress(parts[4]);
         student.setPhoneNumber(parts[5]);

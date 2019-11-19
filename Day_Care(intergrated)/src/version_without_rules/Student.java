@@ -44,7 +44,7 @@ public class Student extends Person {
 
 	@Override
 	public String toString() {
-		return "Student [Name: " + getName() + ", gpa: " + gpa + ", ParentName: " + parentName + ", address: " + address + ", phoneNumber: " + phoneNumber + "]";
+		return "Student [Name: " + getName() + ", Age: " + getAge()+ ", Gpa: " + gpa + ", ParentName: " + parentName + ", address: " + address + ", phoneNumber: " + phoneNumber + "]";
 	}
 
     /*@Override
