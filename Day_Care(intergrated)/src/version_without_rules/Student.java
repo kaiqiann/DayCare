@@ -5,6 +5,7 @@ public class Student extends Person {
     private String address;
     private String phoneNumber;
     private double gpa;
+    private boolean overdue;
 
     public Student() {
     
@@ -16,6 +17,14 @@ public class Student extends Person {
 
 	public void setGpa(double gpa) {
 		this.gpa = gpa;
+	}
+
+	public boolean isOverdue() {
+		return overdue;
+	}
+
+	public void setOverdue(boolean overdue) {
+		this.overdue = overdue;
 	}
 
 	public String getParentName() {
@@ -44,7 +53,7 @@ public class Student extends Person {
 
 	@Override
 	public String toString() {
-		return "Student [Name: " + getName() + ", gpa: " + gpa + ", ParentName: " + parentName + ", address: " + address + ", phoneNumber: " + phoneNumber + "]";
+		return "Student [Name: " + getName() + ", Age: " + getAge()+ ", Gpa: " + gpa + ", ParentName: " + parentName + ", address: " + address + ", phoneNumber: " + phoneNumber + "]";
 	}
 
     /*@Override

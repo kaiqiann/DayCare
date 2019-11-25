@@ -26,7 +26,7 @@ public class Classroom {
 
 	public void setCredits(int credits) {
 		for(Teacher t: teachers) {
-			t.credits = credits;
+			t.setCredits(credits);
 		}
 	}
 	

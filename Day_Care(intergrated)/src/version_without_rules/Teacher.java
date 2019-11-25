@@ -4,7 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Teacher extends Person {
-	int credits;
+	private int credits;
+	private String Comment;
+
+	public String getComment() {
+		return Comment;
+	}
+
+	public void setComment(String comment) {
+		Comment = comment;
+	}
 
 	public List<Student> StudentLsits = new ArrayList<Student>();
 	
